@@ -1,33 +1,31 @@
 # Cognevance Project 1: Cloud-Based Static Website Deployment
 
-## Overview
+## 1. Project Overview
 
-GlobalBridge is a responsive demo website developed using HTML, CSS, and JavaScript. This project demonstrates static website development, version control using Git and GitHub, cloud hosting using AWS S3, and website availability monitoring using UptimeRobot.
+GlobalBridge is a responsive demo website developed using HTML, CSS, and JavaScript. This project demonstrates static website development, version control using Git and GitHub, cloud deployment using Amazon S3, and website availability monitoring using UptimeRobot.
 
-The website is deployed on Amazon S3 Static Website Hosting and can be accessed through its public website endpoint.
+The website is hosted using AWS S3 Static Website Hosting and has been tested on desktop and mobile devices.
 
-## Live Website
+## 2. Live Deployment
 
-**Website URL:** http://cognevance-static-website-s23chin.s3-website.eu-north-1.amazonaws.com
+- **Live Website:** [GlobalBridge Website](http://cognevance-static-website-s23chin.s3-website.eu-north-1.amazonaws.com)
+- **GitHub Repository:** [cognevance_static-website](https://github.com/s23chin/cognevance_static-website)
+- **Cloud Provider:** Amazon Web Services (AWS)
+- **Hosting Service:** Amazon S3 Static Website Hosting
+- **AWS Region:** Europe (Stockholm) — `eu-north-1`
+- **Website Monitoring:** UptimeRobot
+- **Last Verified Monitoring Status:** UP
 
-**Hosting Platform:** Amazon Web Services (AWS) S3
+## 3. Technologies Used
 
-**AWS Region:** Europe (Stockholm) — `eu-north-1`
+- HTML5
+- CSS3
+- JavaScript
+- Git and GitHub
+- Amazon S3
+- UptimeRobot
 
-**Monitoring Tool:** UptimeRobot
-
-**Monitoring Status:** UP (verified during testing)
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript
-* Git and GitHub
-* Amazon S3 Static Website Hosting
-* UptimeRobot Website Monitoring
-
-## Project Structure
+## 4. Project Structure
 
 ```text
 cognevance_static-website/
@@ -39,15 +37,24 @@ cognevance_static-website/
 └── README.md
 ```
 
-## Features
+## 5. Features
 
-* Responsive website layout for desktop and mobile devices
-* Frontend development using HTML, CSS, and JavaScript
-* Cloud-based static website hosting
-* Public access through an AWS S3 website endpoint
-* Website availability monitoring using UptimeRobot
+- Responsive layout for desktop and mobile devices
+- Frontend developed using HTML, CSS, and JavaScript
+- Static website hosting on AWS S3
+- Public website access through an S3 website endpoint
+- Website availability monitoring using UptimeRobot
+- Version control and source code management using Git and GitHub
 
-## Run Locally
+## 6. Run the Project Locally
+
+### Prerequisites
+
+- A web browser
+- Git
+- Visual Studio Code (optional)
+
+### Steps
 
 1. Clone the repository:
 
@@ -55,62 +62,65 @@ cognevance_static-website/
    git clone https://github.com/s23chin/cognevance_static-website.git
    ```
 
-2. Open the project folder:
+2. Navigate to the project directory:
 
    ```bash
    cd cognevance_static-website
    ```
 
-3. Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code.
+3. Open `index.html` in a web browser, or use the Live Server extension in Visual Studio Code.
 
-## AWS S3 Deployment
+## 7. AWS S3 Deployment
 
 The website was deployed using Amazon S3 Static Website Hosting.
 
-Deployment steps:
+### Deployment Steps
 
 1. Create an S3 bucket with a globally unique name.
 2. Upload the website files, including `index.html`, `style.css`, and `script.js`.
 3. Enable Static Website Hosting in the bucket properties.
-4. Set `index.html` as the index document.
-5. Configure the required public access settings and bucket policy for public website content.
+4. Configure `index.html` as the index document.
+5. Configure the required public access settings and bucket policy for the intended public website files.
 6. Open the S3 website endpoint and verify that the website loads correctly.
 
-## Website Monitoring
+## 8. Website Monitoring
 
 UptimeRobot is used to monitor the availability of the deployed website.
 
-* **Monitor type:** HTTP(s)
-* **Monitored endpoint:** AWS S3 website URL listed above
-* **Last verified status:** UP
+- **Monitoring Tool:** UptimeRobot
+- **Monitor Type:** HTTP(s)
+- **Monitored URL:** [GlobalBridge Website](http://cognevance-static-website-s23chin.s3-website.eu-north-1.amazonaws.com)
+- **Observed Status:** UP
 
-The monitor checks whether the configured website endpoint responds. Monitoring status may change if the website becomes unavailable.
+The monitor checks the configured endpoint and reports whether it receives the expected response. An UP status confirms a successful monitoring check, but it does not guarantee that every website feature is functioning correctly.
 
-## Security Considerations
+## 9. Security Considerations
 
-* Never upload AWS access keys, credentials, or other secrets to GitHub or the public S3 bucket.
-* Only publish files intended for public access.
-* Do not collect real personal or confidential information through demo forms.
-* The S3 static website endpoint supports HTTP, not HTTPS.
-* HTTPS can be configured using Amazon CloudFront and an appropriate TLS certificate. Review AWS pricing before creating additional resources.
+- Never commit AWS access keys, passwords, or other secrets to GitHub.
+- Only upload files intended for public access to the public website bucket.
+- Do not collect real personal or confidential information through demo forms.
+- The Amazon S3 static website endpoint supports HTTP and does not provide HTTPS directly.
+- HTTPS can be configured using Amazon CloudFront and an appropriate TLS certificate. Review AWS pricing before creating additional resources.
 
-## Documentation and Evidence
+## 10. Documentation and Evidence
 
-The following evidence should be maintained as part of the project:
+The repository includes folders for project evidence and documentation.
 
-* `screenshots/`: Website screenshots, AWS S3 hosting configuration, and UptimeRobot monitoring status.
-* `docs/`: Deployment notes, testing results, and monitoring documentation.
+- **`screenshots/`** — Screenshots of the deployed website, AWS S3 configuration, and UptimeRobot monitoring.
+- **`docs/`** — Deployment notes, testing results, and monitoring documentation.
 
-## Project Status
+## 11. Project Status
 
-* [x] Responsive website developed
-* [x] Website deployed on AWS S3
-* [x] Static Website Hosting configured
-* [x] Website tested on desktop and mobile
-* [x] UptimeRobot monitoring configured and status verified as UP
-* [ ] Screenshots and documentation organized in the repository
-* [ ] Custom domain and HTTPS configuration, if required
+- [x] Responsive website developed
+- [x] Website deployed on AWS S3
+- [x] Static Website Hosting configured
+- [x] Website tested on desktop and mobile
+- [x] UptimeRobot monitoring configured and verified as UP
+- [x] Screenshots uploaded to the GitHub repository
+- [ ] Monitoring report saved in `docs/monitoring.md`
+- [ ] Custom domain and HTTPS configured, if required by the project requirements
 
-## Author
+## 12. Author
 
-Developed as part of the Cognevance Technologies Cloud Computing and DevOps Internship project.
+Developed as part of the **Cognevance Technologies Cloud Computing and DevOps Internship**.
+
