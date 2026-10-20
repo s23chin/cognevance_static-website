@@ -111,13 +111,15 @@ The repository includes folders for project evidence and documentation.
 
 ## 11. Project Status
 
+## 11. Project Status
+
 - [x] Responsive website developed
 - [x] Website deployed on AWS S3
 - [x] Static Website Hosting configured
 - [x] Website tested on desktop and mobile
 - [x] UptimeRobot monitoring configured and verified as UP
 - [x] Screenshots uploaded to the GitHub repository
-- [ ] Monitoring report saved in `docs/monitoring.md`
+- [x] Monitoring report saved in `docs/monitoring.md`
 - [ ] Custom domain and HTTPS configured, if required by the project requirements
 
 ## 12. Author
